@@ -2,24 +2,15 @@
 function App() {
     const { Container, Row, Col } = ReactBootstrap;
     return (
-
+<p className="text-center">ToDo App by Yosuke Okami</p>
         <Container>
             <Row>
                 <Col md={{ offset: 3, span: 6 }}>
                     <TodoListCard />
-                    <Header />
                 </Col>
             </Row>
         </Container>
     );
-}
-function Header(){
-    const {item} = ReactBootstrap;
-    return{
-        <item>
-            <p className="text-center">ToDo App by Yosuke Okami</p>
-        </item>
-    };
 }
 function TodoListCard() {
     const [items, setItems] = React.useState(null);
