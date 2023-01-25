@@ -1,3 +1,12 @@
+function Header(){
+    const {item} = ReactBootstrap;
+    return{
+        <item>
+            <p className="text-center">ToDo App by Yosuke Okami</p>
+        </item>
+    };
+    
+}
 function App() {
     const { Container, Row, Col } = ReactBootstrap;
     return (
@@ -9,13 +18,6 @@ function App() {
             </Row>
         </Container>
     );
-}
-function header(rootDir){
-   <header>
-       <h1>
-       ToDo App by okami622
-       </h1>
-   </header>
 }
 function TodoListCard() {
     const [items, setItems] = React.useState(null);
