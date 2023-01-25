@@ -3,9 +3,9 @@ function Header(){
     return{
         <item>
             <p className="text-center">ToDo App by Yosuke Okami</p>
+            <App />
         </item>
     };
-    
 }
 function App() {
     const { Container, Row, Col } = ReactBootstrap;
@@ -19,6 +19,7 @@ function App() {
         </Container>
     );
 }
+
 function TodoListCard() {
     const [items, setItems] = React.useState(null);
 
